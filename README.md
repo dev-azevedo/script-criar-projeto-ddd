@@ -2,8 +2,16 @@
 
 ![GIF animado](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGEzYW95eWNmc3M3azk0eWw3aWM2ZzJzZ3djNmFuNWtzYTBvdmE3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fw1im4D3MOLJnqm8TZ/giphy.gif)
 
+## ⚙️ Requisitos
+- .Net SDK 6.0 ou superior
+ - Astral UV
+
+
+
 ## 📝 Descrição
-Esse script cria um projeto DDD com .Net com o seguinte estrutura:
+Esse script cria um projeto DDD
+
+### Estrutura do projeto com .Net com:
 ```
 
 ├── src
@@ -36,7 +44,7 @@ Esse script cria um projeto DDD com .Net com o seguinte estrutura:
 
 --- 
 
-Esse script cria um projeto DDD com FastAPI com o seguinte estrutura:
+### Estrutura do projeto com FastAPI:
 ```
 
 ├── src
@@ -52,7 +60,8 @@ Esse script cria um projeto DDD com FastAPI com o seguinte estrutura:
 |   |   └── services
 │   └── api
 │       ├── main.py
-│       └── controllers   
+│       └── controllers
+│           
 ├── test
 ├── README.md
 ├── .gitignore

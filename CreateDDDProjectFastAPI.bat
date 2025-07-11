@@ -29,7 +29,7 @@ uv init .
 :: Instalar dependências
 echo Instalando dependências...
 uv sync
-uv add fastapi[standard] pydantic
+uv add fastapi[standard] pydantic Black
 
 :: Criar estrutura DDD
 echo Criando estrutura DDD...
@@ -66,7 +66,7 @@ echo Criando arquivos iniciais...
   echo @app.get("/")
   echo def read_root():
   echo     return {"message": "Hello from %PROJECT_NAME%!"}
-) > src\main.py
+) > src\api\main.py
 
 :: Create .env
 echo. > .env
@@ -90,6 +90,11 @@ echo. > src\infra\__init__.py
 echo. > src\infra\database\__init__.py
 echo. > src\infra\database\repositories\__init__.py
 echo. > tests\__init__.py
+
+if exist hello.py (
+    echo Removendo hello.py criado pelo uv...
+    del /f /q hello.py
+)
 
 :: Final
 echo.
