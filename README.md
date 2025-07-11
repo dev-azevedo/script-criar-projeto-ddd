@@ -1,9 +1,9 @@
-# 💡 Script para criar projeto DDD com .Net by:Jhonatan Azevedo💡
+# 💡 Script para criar projeto DDD com .Net ou FastAPI by:Jhonatan Azevedo💡
 
 ![GIF animado](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGEzYW95eWNmc3M3azk0eWw3aWM2ZzJzZ3djNmFuNWtzYTBvdmE3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fw1im4D3MOLJnqm8TZ/giphy.gif)
 
 ## 📝 Descrição
-Esse script cria um projeto DDD com o seguinte estrutura:
+Esse script cria um projeto DDD com .Net com o seguinte estrutura:
 ```
 
 ├── src
@@ -34,8 +34,37 @@ Esse script cria um projeto DDD com o seguinte estrutura:
 └── solution.sln
 ```
 
+--- 
+
+Esse script cria um projeto DDD com FastAPI com o seguinte estrutura:
+```
+
+├── src
+│   ├── domain
+│   │   ├── interfaces
+│   │   └── models
+│   ├── infra
+│   │   ├── database
+│   │   │   └── repositories
+│   ├── application
+│   │   ├── dto
+│   │   ├── interfaces
+|   |   └── services
+│   └── api
+│       ├── main.py
+│       └── controllers   
+├── test
+├── README.md
+├── .gitignore
+├── .python-version
+├── pyproject.toml
+└── uv.lock
+```
+
+--- 
+
 ## 💻 Como executar
-1. Execute o script: ```CreateDDDProject.bat```
+1. Execute o script: ```CreateDDDProjectDotNet.bat || CreateDDDProjectFastAPI.bat```
 2. Escreva o nome do projeto
 3. Escreva o caminho onde o projeto será criado.
 
